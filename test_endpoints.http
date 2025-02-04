@@ -1,0 +1,62 @@
+### Get first post
+GET https://jsonplaceholder.typicode.com/posts/1
+Accept: application/json
+
+### Get first comment
+GET https://jsonplaceholder.typicode.com/comments/1
+Accept: application/json
+
+### Get first album
+GET https://jsonplaceholder.typicode.com/albums/1
+Accept: application/json
+
+### Get first photo
+GET https://jsonplaceholder.typicode.com/photos/1
+Accept: application/json
+
+### Get first photo
+GET https://jsonplaceholder.typicode.com/todos/1
+Accept: application/json
+
+### Get first user
+GET https://jsonplaceholder.typicode.com/users/1
+Accept: application/json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
