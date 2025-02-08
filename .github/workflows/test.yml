@@ -29,7 +29,8 @@ jobs:
         pip install pytest-json-ctrf
 
     - name: Run tests
-      run: pytest -ctrf $REPORT -n $PROC --testomatio report
+      #run: pytest -ctrf $REPORT -n $PROC --testomatio reportyyp
+      run: pytest -ctrf $REPORT -n $PROC # --testomatio reportyyp
       env:
         REPORT: 'test-results/result.json'
         PROC: 'auto'
