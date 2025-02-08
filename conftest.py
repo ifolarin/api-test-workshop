@@ -19,9 +19,6 @@ def session():
     base_url = os.getenv('BASE_URL', 'https://jsonplaceholder.typicode.com')
     session = BaseSession(base_url)
 
-    #response = session.post('/posts', json={'title' : 'foo', 'body' : 'bar', 'userid' : 1})
-    #session.headers.update({'Authorization', f'Bearer {response.json()["id"]}'})
-
     yield session
 
     session.close()
