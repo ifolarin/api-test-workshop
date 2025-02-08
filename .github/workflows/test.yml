@@ -30,14 +30,14 @@ jobs:
     - name: Run tests
       run: pytest -ctrf $REPORT -n $PROC --testomatio report
       env:
-        REPORT: 'test-result/result.json'
+        REPORT: 'test-results/result.json'
         PROC: 'auto'
         TESTOMATIO: ${{secrets.TESTOMATIO_API_KEY}}
         TESTOMATIO_CODE_STYLE: 'pep8'
     
     - name: Generate Pretty Report
       if: always()
-      run: 
+      run: |
         npx github-actions-ctrf test-results/report.json
 
 
