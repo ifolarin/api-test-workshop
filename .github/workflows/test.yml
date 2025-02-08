@@ -32,7 +32,7 @@ jobs:
       #run: pytest --ctrf $REPORT -n $PROC --testomatio report
       run: pytest --ctrf $REPORT -n $PROC # --testomatio report
       env:
-        REPORT: 'test-results/result.json'
+        REPORT: 'test-results/report.json'
         PROC: 'auto'
         TESTOMATIO: ${{secrets.TESTOMATIO_API_KEY}}
         TESTOMATIO_CODE_STYLE: 'pep8'
